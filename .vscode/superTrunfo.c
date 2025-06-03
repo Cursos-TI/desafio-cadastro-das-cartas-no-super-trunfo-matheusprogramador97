@@ -1,16 +1,22 @@
 #include <stdio.h>
 
+int gerarNumero(int min, int max) {
+    return rand() % (max - min + 1) + min;
+}
+
 int main () {
  
+srand(time(NULL));
+
     int opcao;
     char carta1;          
     char estado_01[50];
     char nomeCidade_01[50];
     char codigo_01[10];
-    float area_01 = 1.523;
-    float pib_01 = 35.711;
-    int pontoTuristicos_01 = 40;
-    int populacao_01 = 11450550;
+    float area_01 = gerarNumero(1000, 10000);
+    float pib_01 = gerarNumero(1000, 10000); 
+    int pontoTuristicos_01 = gerarNumero(1000, 10000);
+    int populacao_01 = gerarNumero(1000, 10000);
     float densidade_1 = populacao_01 / area_01;
     float pib_per_capita_1 = pib_01 / populacao_01;
 
@@ -18,10 +24,10 @@ int main () {
     char estado_2[50];
     char nomeCidade_2[50];
     char codigo_2[10];
-    float area_2  = 1.200;
-    float pib_2 = 359.64;
-    int pontoTuristicos_2 = 50;
-    int populacao_2 = 6211630;
+    float area_2  = gerarNumero(1000, 10000);
+    float pib_2 = gerarNumero(1000, 10000);
+    int pontoTuristicos_2  = gerarNumero(1000, 10000);
+    int populacao_2  = gerarNumero(1000, 10000);
     float densidade_2 = populacao_2 / area_2;
     float pib_per_capita_2 = pib_2  / populacao_2;
 
