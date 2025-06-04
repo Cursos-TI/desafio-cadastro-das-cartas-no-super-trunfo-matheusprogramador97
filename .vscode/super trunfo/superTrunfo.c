@@ -7,7 +7,7 @@ int gerarNumero(int min, int max) {
 
 int main () {
   // iniciando o numero aleatorio
-srand(time(NULL));
+srand(time(0));
 
     int opcao;
     char carta1;          
