@@ -39,13 +39,13 @@ int main ()  {
   printf("\n");
 
   printf("MOVIMENTO DA TORRE\n");
-  moverTorre (5);                   //QUANTIDADE DE MOVIMENTO DA TORRE (5)
+  moverTorre (5);                   //QUANTIDADE DE MOVIMENTO DA TORRE (5 SENTIDO Á DIREITA)
   printf("\n");
   printf("MOVIMENTO DO BISPO\n");
-  moverBispo (8);                  //QUANTIDADE DE MOVIMENTO DO BISPO (8)
+  moverBispo (8);                  //QUANTIDADE DE MOVIMENTO DO BISPO (8 SENTIDO PARA CIMA É DIREITA)
   printf("\n");
   printf("MOVIMENTO DA RAINHA\n");
-  moverRainha (8);                 //QUNATIDADE DE MOVIMENTO DA RAINHA (8)
+  moverRainha (8);                 //QUNATIDADE DE MOVIMENTO DA RAINHA (8 SENTIDO Á ESQUERDA)
 
   return 0;
 }
