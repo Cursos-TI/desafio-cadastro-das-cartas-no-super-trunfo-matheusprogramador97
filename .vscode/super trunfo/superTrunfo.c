@@ -1,11 +1,12 @@
 #include <stdio.h>
 
+// gerador de numero aleatorio 
 int gerarNumero(int min, int max) {
     return rand() % (max - min + 1) + min;
 }
 
 int main () {
- 
+  // iniciando o numero aleatorio
 srand(time(NULL));
 
     int opcao;
@@ -32,6 +33,7 @@ srand(time(NULL));
     float pib_per_capita_2 = pib_2  / populacao_2;
 
 
+
     printf("1.area");
     printf("\n");
     printf("2.pib");
@@ -50,9 +52,9 @@ srand(time(NULL));
    switch (opcao)
    {
    case 1:
-   printf("carta 1: %f ",area_01);
+   printf("carta 1: %.2f ",area_01);
    printf("\n");
-   printf("carta 2: %f ",area_2);
+   printf("carta 2: %.2f ",area_2);
    printf("\n");
    if (area_01 > area_2) {
 
@@ -67,9 +69,9 @@ srand(time(NULL));
 
    case 2:
 
-   printf("carta 1: %f",pib_01);
+   printf("carta 1: %.2f",pib_01);
    printf("\n");
-   printf("carta 2: %f",pib_2);
+   printf("carta 2: %.2f",pib_2);
    printf("\n");
   
    if(pib_01 > pib_2){
@@ -121,9 +123,9 @@ srand(time(NULL));
    break;
    
    case 5:
-   printf("carta 1: %f",densidade_1);
+   printf("carta 1: %.2f",densidade_1);
    printf("\n");
-   printf("carta 2: %f",densidade_2);
+   printf("carta 2: %.2f",densidade_2);
    printf("\n");
 
    if(densidade_1 > densidade_2){
@@ -141,9 +143,9 @@ srand(time(NULL));
    break;
 
    case 6:
-   printf("carta 1: %f",pib_per_capita_1);
+   printf("carta 1: %.2f",pib_per_capita_1);
    printf("\n");
-   printf("carta 2: %f",pib_per_capita_2);
+   printf("carta 2: %.2f",pib_per_capita_2);
    printf("\n");
 
    if(pib_per_capita_1 > pib_per_capita_2){
@@ -156,7 +158,8 @@ srand(time(NULL));
       printf("a carta 2 venceu!!! cidade do rio de janeiro");
       printf("\n");
    }
-
+   
+    break;
    default:
 
    printf("opçao invalida");
